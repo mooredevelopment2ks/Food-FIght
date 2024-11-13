@@ -1,0 +1,33 @@
+#################################
+# Unreal Engine Generated Files #
+#################################
+.idea
+/[Bb]uild
+/[Bb]uilds
+/Binaries
+/DerivedDataCache
+/Intermediate
+/Saved
+FoodFight.sln
+#########################
+# Default ignored files #
+#########################
+/shelf/
+/workspace.xml
+#######################
+# Rider ignored files #
+#######################
+/.idea.FoodFight.iml
+/projectSettingsUpdater.xml
+/modules.xml
+/contentModel.xml
+/FoodFight (Mac).xcworkspace/
+#####################################
+# Editor-based HTTP Client requests #
+#####################################
+/httpRequests/
+##########################################
+# Datasource local storage ignored files #
+##########################################
+/dataSources/
+/dataSources.local.xml
