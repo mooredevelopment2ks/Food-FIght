@@ -9,6 +9,10 @@
 /Intermediate
 /Saved
 FoodFight.sln
+Content/Developers/
+Platforms/
+Config/IOS/
+Config/TVOS/
 #########################
 # Default ignored files #
 #########################
@@ -17,6 +21,8 @@ FoodFight.sln
 #######################
 # Rider ignored files #
 #######################
+/.DS_STORE
+Content/.DS_Store
 /.idea.FoodFight.iml
 /projectSettingsUpdater.xml
 /modules.xml
