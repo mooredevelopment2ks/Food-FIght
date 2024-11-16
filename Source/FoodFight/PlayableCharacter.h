@@ -60,7 +60,7 @@ public:
 	void MoveCompleted(const FInputActionValue& Value);
 
 	bool IsInMapBoundsHorizontal(float XPosition);
-	bool IsInMapBoundsVertical(float ZPosition);
+	bool IsInMapBoundsVertical(float YPosition);
 
 	UFUNCTION()
 	void OverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,

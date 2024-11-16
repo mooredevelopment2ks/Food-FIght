@@ -32,7 +32,7 @@ void AFood::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	FVector2D DistanceToMove {MovementDirection * MovementSpeed * DeltaTime};
-	FVector NewLocation {GetActorLocation() + FVector(DistanceToMove.X, 0.0f, DistanceToMove.Y)};
+	FVector NewLocation {GetActorLocation() + FVector(DistanceToMove.X, DistanceToMove.Y, 0.0f)};
 	SetActorLocation(NewLocation);
 }
 

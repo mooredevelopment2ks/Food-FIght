@@ -38,10 +38,10 @@ void APlayableCharacter::Tick(float DeltaTime)
 			{
 				NewLocation -= FVector(DistanceToMove.X, 0.0f, 0.0f);
 			}
-			NewLocation += FVector(0.0f, 0.0f, DistanceToMove.Y);
-			if(!IsInMapBoundsVertical(NewLocation.Z))
+			NewLocation += FVector(0.0f, DistanceToMove.Y, 0.0f);
+			if(!IsInMapBoundsVertical(NewLocation.Y))
 			{
-				NewLocation -= FVector(0.0f, 0.0f, DistanceToMove.Y);
+				NewLocation -= FVector(0.0f, DistanceToMove.Y, 0.0f);
 			}
 			SetActorLocation(NewLocation);
 		}
@@ -56,11 +56,11 @@ bool APlayableCharacter::IsInMapBoundsHorizontal(float XPosition)
 	
 	return Result;
 }
-bool APlayableCharacter::IsInMapBoundsVertical(float ZPosition)
+bool APlayableCharacter::IsInMapBoundsVertical(float YPosition)
 {
 	bool Result = true;
 	
-	Result = (ZPosition > VerticalLimits.X) && (ZPosition < VerticalLimits.Y);
+	Result = (YPosition > VerticalLimits.X) && (YPosition < VerticalLimits.Y);
 	
 	return Result;
 }

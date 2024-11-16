@@ -127,14 +127,14 @@ void AFoodProjectile::InstantiateFoodFightProjectile()
 	FVector2D CentrePosition{0.0f, 0.0f};
 	MovementDirection = CentrePosition - ProjectilePosition;
 	FVector PlayableCharacterPosition{PlayableCharacter->GetActorLocation()};
-	MovementDirection = FVector2D(PlayableCharacterPosition.X, PlayableCharacterPosition.Z) - ProjectilePosition;
+	MovementDirection = FVector2D(PlayableCharacterPosition.X, PlayableCharacterPosition.Y) - ProjectilePosition;
 	MovementDirection.Normalize();
 	
 	// Instantiate the food and setup
 	AFood* Food{
 		GetWorld()->SpawnActor<AFood>(
 			FoodActorToProjectile, 
-			FVector(ProjectilePosition.X, 0.0f, ProjectilePosition.Y),
+			FVector(ProjectilePosition.X, ProjectilePosition.Y, 0.0f),
 			FRotator::ZeroRotator
 		)
 	};
